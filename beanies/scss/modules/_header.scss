@@ -1,0 +1,37 @@
+.header {
+	height: 100px;
+	background: #fff;
+}
+
+.logo {
+	display: inline-block;
+	@include vertical-align;
+
+	&__img {
+		display: block;
+		width: 345px;
+	}
+
+}
+
+.nav {
+	float: right;
+	@include vertical-align;
+}
+
+.menu {
+	&__item {
+		display: inline-block;
+	}
+	&__link {
+		@extend %bold;
+		display: block;
+		padding: 0 20px;
+		font-size: 1.25rem;
+		text-transform: uppercase;
+	}
+	&__fb {
+		display: block;
+		width: 14px;
+	}
+}
