@@ -1,11 +1,11 @@
 .header {
-	height: 100px;
+	padding: 32px 0;
 	background: #fff;
 }
 
 .logo {
-	display: inline-block;
-	@include vertical-align;
+	display: block;
+	float: left;
 
 	&__img {
 		display: block;
@@ -16,10 +16,10 @@
 
 .nav {
 	float: right;
-	@include vertical-align;
 }
 
 .menu {
+	padding:2sspx 0;
 	&__item {
 		display: inline-block;
 	}

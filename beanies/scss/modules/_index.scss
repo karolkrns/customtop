@@ -36,6 +36,15 @@
 	background: #fff;
 	overflow: hidden;
 	@include clearfix;
+
+	&_alt {
+		padding: 0;
+	}
+
+	&_auto {
+		height: auto;
+		padding: 80px 0;
+	}
 	
 	&__thumb {
 		width: 55.5%;
@@ -44,21 +53,37 @@
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
+
+		+ .section__caption {
+			.caption {
+				left: -50px;
+				right: auto;
+				text-align: left;
+			}
+		}
 	}
 
 	&__caption {
 		width: 44.5%;
 		height: 100%;
 		float: left;
+		z-index: 2;
+	}
+
+	&__button {
+		margin-top: 60px;
+		text-align: center;
 	}
 
 }
 
 .caption {
 	position: relative;
-	left: -50px;
+	right: -50px;
 	padding: 40px;
 	background: #fff;
+	text-align: right;
+	z-index: 2;
 	@include vertical-align;
 
 	&__title {
@@ -68,33 +93,11 @@
 		line-height: 3.95rem;
 		text-transform: uppercase;
 	}
-}
 
-.slider {
-	.swiper-slide-active {
-		.product__thumb {
-			transform: scale(1);
+	&__desc {
+		+ .button {
+			margin-top: 55px;
+			margin-bottom: 10px;
 		}
-		.product__name {
-			opacity: 1;
-		}
-		
-	}
-}
-
-.product {
-	text-align: center;
-	&__thumb {
-		height: 484px;
-		transform: scale(.7);
-		transition: .5s;
-
-		img {
-			@include vertical-align;
-		}
-	}
-	&__name {
-		opacity: 0;
-		transition: .3s;
 	}
 }

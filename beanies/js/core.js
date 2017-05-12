@@ -1,10 +1,7 @@
 $(document).ready(function() {
-    
-	
 
     // initScripts
     function init() {
-        scrollFade();
         slider();
     }
 
@@ -12,14 +9,6 @@ $(document).ready(function() {
 
 
     // scripts
-    function scrollFade() {
-        $(window).fadeThis({
-            speed: 600,
-            distance: 400,
-            reverse: false
-        });
-    }
-
     function slider() {
         var $this = $('.js-slider');
         var slider = new Swiper($this, {
@@ -33,6 +22,7 @@ $(document).ready(function() {
             centeredSlides: true,
             autoHeight: true,
             loopAdditionalSlides: 1,
+            //initialSlide: 3,
             breakpoints: {
                 767: {
                     slidesPerView: 1

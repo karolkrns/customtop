@@ -7,16 +7,18 @@
         <meta name="viewport" content="width=device-width">
         <meta name="format-detection" content="telephone=no">
         <title>Tytuł Strony</title>
+
+        <script src="js/lib/jquery-3.2.1.min.js"></script>
+        <script src="js/lib/jquery.fadethis.min.js"></script>
+        <script src="js/lib/swiper.jquery.min.js"></script>
+        <script src="js/core.js"></script>
         
         <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
         <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-        <script src="js/lib/jquery-3.2.1.min.js"></script>
-        <script src="js/lib/jquery.fadethis.min.js"></script>
-        <script src="js/lib/swiper.jquery.min.js"></script>
-        <script src="js/core.js"></script>
+        
     </head>
 
     <body>
@@ -54,7 +56,7 @@
             </div>
             <section class="section">
                 <div class="section__thumb slide-left" style="background-image: url(img/photo_00.jpg);"></div>
-                <div class="section__caption slide-right">
+                <div class="section__caption slide-left">
                     <div class="caption">
                         <h2 class="caption__title">Own <br/> style</h2>
                         <div class="caption__desc">
@@ -69,8 +71,8 @@
                     </div>
                 </div>
             </section>
-            <section class="section">
-                <div class="slider">
+            <section class="products">
+                <div class="slider slide-right">
                     <div class="swiper-container js-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -100,7 +102,7 @@
                             <div class="swiper-slide">
                                 <div class="product">
                                     <div class="product__thumb">
-                                        <img src="img/product_00.jpg" alt="product">
+                                        <img src="img/product_03.jpg" alt="product">
                                     </div>
                                     <h4 class="product__name">Custom Beanie</h4>
                                 </div>
@@ -108,26 +110,104 @@
                             <div class="swiper-slide">
                                 <div class="product">
                                     <div class="product__thumb">
-                                        <img src="img/product_01.jpg" alt="product">
-                                    </div>
-                                    <h4 class="product__name">Custom Beanie</h4>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product">
-                                    <div class="product__thumb">
-                                        <img src="img/product_02.jpg" alt="product">
+                                        <img src="img/product_04.jpg" alt="product">
                                     </div>
                                     <h4 class="product__name">Custom Beanie</h4>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"><i class="icon-left-small"></i></div>
+                        <div class="swiper-button-next"><i class="icon-right-small"></i></div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section_alt">
+                <div class="section__caption slide-left">
+                    <div class="caption">
+                        <h2 class="caption__title">Ideas vs <br/> reality</h2>
+                        <div class="caption__desc"> 
+                            We’re here to bring Your ideas into reality. <br/>
+                            We produce high quality leggings to give You <br/>
+                            possibility to create truly original style based  <br/>
+                            on Your ideas. You create, we do the rest. <br/>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__thumb slide-right" style="background-image: url(img/photo_01.jpg);"></div>
+            </section>
+            <section class="work">
+                <div class="container slide-right">
+                    <h2 class="simple-header">
+                        How does it work?
+                        <small>only 5 steps</small>
+                    </h2>
+                    <ul class="steps">
+                        <li class="steps__item">
+                            <div class="steps__icon">
+                                <img src="img/icon_design.svg">
+                            </div>
+                            <h3 class="steps__title">you design clothes</h3>
+                        </li>
+                        <li class="steps__item">
+                            <div class="steps__icon">
+                                <img src="img/icon_support.svg">
+                            </div>
+                            <h3 class="steps__title">we support</h3>
+                        </li>
+                        <li class="steps__item">
+                            <div class="steps__icon">
+                                <img src="img/icon_deal.svg">
+                            </div>
+                            <h3 class="steps__title">cutting a deal</h3>
+                        </li>
+                        <li class="steps__item">
+                            <div class="steps__icon">
+                                <img src="img/icon_accept.svg">
+                            </div>
+                            <h3 class="steps__title">you accept</h3>
+                        </li>
+                        <li class="steps__item">
+                            <div class="steps__icon">
+                                <img src="img/icon_deliver.svg">
+                            </div>
+                            <h3 class="steps__title">we deliver</h3>
+                        </li>
+                    </ul>    
+                </div>
+            </section>
+            <section class="section section_alt">
+                <div class="section__thumb slide-top" style="background-image: url(img/photo_02.jpg);"></div>
+                <div class="section__caption slide-top">
+                    <div class="caption">
+                        <h2 class="caption__title">Try it!</h2>
+                        <div class="caption__desc">
+                            If you are interested in, check out the offer
+                        </div>
+                        <a href="#" class="button">download caps catalog</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section section_auto">
+                <div class="container">
+                     <h2 class="simple-header">
+                        check what else <br/>
+                        we can do for you
+                    </h2>
+                    <div class="section__button">
+                        <a href="#" class="button">go to main page</a>
                     </div>
                 </div>
             </section>
         </div>
+        <script>
+            window.scrollTo(0,0);
+            $(window).fadeThis({
+                speed: 600,
+                distance: 400,
+                reverse: false,
+                offset: -400
+            });
+        </script>
     </body>
 
 </html>

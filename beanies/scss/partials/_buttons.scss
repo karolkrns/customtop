@@ -1,0 +1,11 @@
+.button {
+	@extend %bold;
+	display: inline-block;
+	padding: 13px 30px;
+	border: 5px solid #df007e;
+	transition: .3s;
+	&:hover {
+		background: $color-primary;
+		color: #fff;
+	}
+}

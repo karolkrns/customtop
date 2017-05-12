@@ -4,6 +4,7 @@
 // Vendor
 // Sliders etc.
 @import 'vendors/swiper';
+@import 'vendors/fontello';
 
 // Normalizr
 @import 'partials/normalizr';
@@ -21,6 +22,8 @@
 // Modules
 @import 'modules/header';
 @import 'modules/index';
+@import 'modules/product';
+@import 'modules/work';
 @import 'modules/footer';
 
 // RWD
