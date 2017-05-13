@@ -6,15 +6,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta name="viewport" content="width=device-width">
         <meta name="format-detection" content="telephone=no">
-        <title>Tytuł Strony</title>
+        <title>Customtop - beanies</title>
 
         <script src="js/lib/jquery-3.2.1.min.js"></script>
         <script src="js/lib/jquery.fadethis.min.js"></script>
         <script src="js/lib/swiper.jquery.min.js"></script>
         <script src="js/core.js"></script>
-        
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
         <link rel="stylesheet" type="text/css" href="css/style.css" />
 
@@ -31,13 +28,13 @@
                     <nav class="nav">
                         <ul class="menu">
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Offer</a>
+                                <a href="#offer" class="menu__link">Offer</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Main Page</a>
+                                <a href="http://www.customtop.eu/" class="menu__link" target="_blank">Main Page</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link" title="Facebook">
+                                <a href="https://www.facebook.com/customtop.eu/" target="_blank" class="menu__link" title="Facebook">
                                     <img src="img/fb.svg" class="menu__fb" alt="Fb">
                                 </a>
                             </li>
@@ -54,24 +51,24 @@
                     </h1>
                 </div>
             </div>
-            <section class="section">
-                <div class="section__thumb slide-left" style="background-image: url(img/photo_00.jpg);"></div>
+            <section class="section section_left-thumb">
                 <div class="section__caption slide-left">
                     <div class="caption">
-                        <h2 class="caption__title">Own <br/> style</h2>
+                        <h2 class="caption__title">Own <br class="hide-mobile"/> style</h2>
                         <div class="caption__desc">
                             In Your own style to the top of the head with <strong>Custom</strong>Top <br/> <br/>
  
-                            A good accesorie is always good to have. <br/>
-                            What’s on Your mind might be on Your head. <br/>
-                            Stay ahead of the game by creating your <br/>
-                            own custom caps and beanies, and have one <br/>
+                            A good accesorie is always good to have. <br class="hide-mobile"/>
+                            What’s on Your mind might be on Your head. <br class="hide-mobile"/>
+                            Stay ahead of the game by creating your <br class="hide-mobile"/>
+                            own custom caps and beanies, and have one <br class="hide-mobile"/>
                             of a kind outfit finish in Your collection...
                         </div>
                     </div>
                 </div>
+                <div class="section__thumb hide-mobile slide-left" style="background-image: url(img/photo_00.jpg);"></div>
             </section>
-            <section class="products">
+            <section id="offer" class="products">
                 <div class="slider slide-right">
                     <div class="swiper-container js-slider">
                         <div class="swiper-wrapper">
@@ -121,24 +118,27 @@
                     </div>
                 </div>
             </section>
+            <div class="section show-mobile">
+                <div class="section__thumb slide-right show-mobile" style="background-image: url(img/photo_00.jpg);"></div>
+            </div>
             <section class="section section_alt">
                 <div class="section__caption slide-left">
                     <div class="caption">
-                        <h2 class="caption__title">Ideas vs <br/> reality</h2>
+                        <h2 class="caption__title">Ideas vs <br class="hide-mobile"/> reality</h2>
                         <div class="caption__desc"> 
-                            We’re here to bring Your ideas into reality. <br/>
-                            We produce high quality leggings to give You <br/>
-                            possibility to create truly original style based  <br/>
-                            on Your ideas. You create, we do the rest. <br/>
+                            We’re here to bring Your ideas into reality. <br class="hide-mobile"/>
+                            We produce high quality leggings to give You <br class="hide-mobile"/>
+                            possibility to create truly original style based  <br class="hide-mobile"/>
+                            on Your ideas. You create, we do the rest. <br class="hide-mobile"/>
                         </div>
                     </div>
                 </div>
-                <div class="section__thumb slide-right" style="background-image: url(img/photo_01.jpg);"></div>
+                <div class="section__thumb slide-right hide-mobile" style="background-image: url(img/photo_01.jpg);"></div>
             </section>
             <section class="work">
                 <div class="container slide-right">
                     <h2 class="simple-header">
-                        How does it work?
+                        How does <br class="show-mobile"/> it work?
                         <small>only 5 steps</small>
                     </h2>
                     <ul class="steps">
@@ -175,8 +175,10 @@
                     </ul>    
                 </div>
             </section>
-            <section class="section section_alt">
-                <div class="section__thumb slide-top" style="background-image: url(img/photo_02.jpg);"></div>
+            <div class="section show-mobile">
+                <div class="section__thumb slide-right show-mobile" style="background-image: url(img/photo_01.jpg);"></div>
+            </div>
+            <section class="section section_left-thumb section_alt">
                 <div class="section__caption slide-top">
                     <div class="caption">
                         <h2 class="caption__title">Try it!</h2>
@@ -186,6 +188,7 @@
                         <a href="#" class="button">download caps catalog</a>
                     </div>
                 </div>
+                <div class="section__thumb slide-top" style="background-image: url(img/photo_02.jpg);"></div>
             </section>
             <section class="section section_auto">
                 <div class="container">
@@ -194,7 +197,7 @@
                         we can do for you
                     </h2>
                     <div class="section__button">
-                        <a href="#" class="button">go to main page</a>
+                        <a href="http://www.customtop.eu/" class="button" target="_blank">go to main page</a>
                     </div>
                 </div>
             </section>

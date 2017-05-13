@@ -1,0 +1,188 @@
+.wrapper {
+	position: relative;
+	min-width: 320px;
+	z-index: 1;
+	background: #e1d4ca;
+	&:before {
+		content: "";
+		position: fixed;
+		top: -90px;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 1025px;
+		background: url(../img/top.jpg) center top no-repeat #e1d4ca;
+		z-index: -1;
+		@include _1366 {
+	        background-size: 1440px;
+	    }
+	    @include _320 {
+	    	top: 0;
+	        background-size: auto 403px;
+	    }
+	}
+	
+}
+
+.top {
+	position: relative;
+	width: 100%;
+	height: 755px;
+	@include _1366 {
+        height: 570px;
+    }
+    @include _320 {
+        height: 328px;
+    }
+	&__title {
+		@extend %bold;
+		position: absolute;
+		bottom: 11.5%;
+		right: 7%;
+		text-align: right;
+		font-size: 0;
+
+		@include _1366 {
+			right: 5%;
+	        width: 405px;
+	    }
+
+	    @include _320 {
+	    	right: 8%;
+	    	bottom: 7%;
+	        width: 185px;
+	    }
+	}
+}
+
+.section {
+	position: relative;
+	height: 590px;
+	padding: 50px 0;
+	background: #fff;
+	overflow: hidden;
+	@include clearfix;
+	@include _1366 {
+        height: 505px;
+    }
+
+    @include _320 {
+		height: auto;
+		padding: 10px 0;
+    }
+
+	&_alt {
+		padding: 0;
+	}
+
+	&_auto {
+		height: auto;
+		padding: 80px 0;
+
+		@include _320 {
+			padding: 25px 0;
+	    }
+	}
+
+	&_left-thumb {
+		.section__caption {
+			float: right;
+			.caption {
+				left: -50px;
+				right: auto;
+				text-align: left;
+
+				@include _320 {
+					left: 0;
+			    }
+			}
+		}
+	}
+
+	&.show-mobile {
+		padding: 0;
+	}
+	
+	&__thumb {
+		width: 55.5%;
+		height: 100%;
+		float: left;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		@include _320 {
+			width: 100%;
+	        height: 215px;
+	        float: none;
+	    }
+
+	}
+
+	&__caption {
+		width: 44.5%;
+		height: 100%;
+		float: left;
+		z-index: 2;
+
+		@include _320 {
+			width: 100%;
+	        height: auto;
+	        float: none!important;
+	    }
+
+	}
+
+	&__button {
+		margin-top: 60px;
+		text-align: center;
+
+		@include _320 {
+			margin-top: 20px;
+		}
+	}
+
+}
+
+.caption {
+	position: relative;
+	right: -50px;
+	padding: 40px;
+	background: #fff;
+	text-align: right;
+	z-index: 2;
+	@include vertical-align;
+	@include _768 {
+        padding: 25px;
+    }
+
+    @include _320 {
+    	top: 0;
+		right: 0;
+		padding: 20px;
+		transform: none;
+		text-align: left;
+    }
+
+	&__title {
+		@extend %bold;
+		margin: 0 0 20px;
+		font-size: 3.5rem;
+		line-height: 3.95rem;
+		text-transform: uppercase;
+		@include _320 {
+			font-size: 2.15rem;
+			line-height: 2.3rem;
+		}
+	}
+
+	&__desc {
+		+ .button {
+			margin-top: 55px;
+			margin-bottom: 10px;
+			@include _320 {
+				margin-top: 20px;
+			}
+		}
+	}
+}
